@@ -21,7 +21,7 @@ A docker image which includes:
   - xsl
   - gmagick
   - xdebug
-- [nodejs 8.x](https://nodejs.org)
+- [nodejs 11.x](https://nodejs.org)
 - [yarn](https://yarnpkg.com)
 - [composer](https://getcomposer.org/)
 
