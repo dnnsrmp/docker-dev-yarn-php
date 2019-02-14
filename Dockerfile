@@ -13,7 +13,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     bzip2 \
 
-
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
 RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg \
