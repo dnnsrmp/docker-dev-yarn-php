@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     bzip2
 
-RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
 RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg \
     && sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list'
@@ -23,28 +23,29 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
 
 RUN apt-get update \
   && apt-get install -y \
-        php7.3-apcu \
-        php7.3-bcmath \
-        php7.3-common \
-        php7.3-readline \
-        php7.3-fpm \
-        php7.3-cli \
-        php7.3-mysql \
-        php7.3-sqlite \
-        php7.3-curl \
-        php7.3-intl \
-        php7.3-mbstring \
-        php7.3-opcache \
-        php7.3-json \
-        php7.3-pdo \
-        php7.3-memcached \
-        php7.3-zip \
-        php7.3-xsl \
-        php7.3-imagick \
-        php7.3-xdebug \
+        php7.0-apcu \
+        php7.0-bcmath \
+        php7.0-common \
+        php7.0-readline \
+        php7.0-fpm \
+        php7.0-cli \
+        php7.0-mysql \
+        php7.0-sqlite \
+        php7.0-curl \
+        php7.0-intl \
+        php7.0-mbstring \
+        php7.0-opcache \
+        php7.0-json \
+        php7.0-pdo \
+        php7.0-memcached \
+        php7.0-zip \
+        php7.0-xsl \
+        php7.0-imagick \
+        php7.0-xdebug \
         yarn \
         nodejs \
   && apt-get autoremove -y \
+  && pecl install scrypt \
   && apt-get clean
 
 # composer
