@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     gnupg2 \
     git \
-    bzip2 \
+    bzip2
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
@@ -42,11 +42,9 @@ RUN apt-get update \
         php7.0-xsl \
         php7.0-imagick \
         php7.0-xdebug \
-        php-pear \
         yarn \
         nodejs \
   && apt-get autoremove -y \
-  && pecl install scrypt \
   && apt-get clean
 
 # composer
