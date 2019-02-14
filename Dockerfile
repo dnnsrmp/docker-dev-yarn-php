@@ -42,9 +42,13 @@ RUN apt-get update \
         php7.0-xsl \
         php7.0-imagick \
         php7.0-xdebug \
+        php7.0-dev \
         php-pear \
         yarn \
-        nodejs \
+        nodejs
+
+RUN pecl channel-update pecl.php.net \
+  && pecl install scrypt \
   && apt-get autoremove -y \
   && apt-get clean
 
