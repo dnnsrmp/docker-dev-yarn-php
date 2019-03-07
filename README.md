@@ -25,7 +25,7 @@ A docker image which includes:
 - [yarn](https://yarnpkg.com)
 - [composer](https://getcomposer.org/)
 
-It also contains `curl`, `wget`, `gnupg2` and `git` for reasons.
+It also contains `curl`, `wget`, `gnupg2`,  `git` and `chromium` for reasons.
 
 You can find the image on the official [docker registry](https://hub.docker.com/r/dnnsrmp/dev-yarn-php/)
 
