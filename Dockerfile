@@ -66,9 +66,6 @@ RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
     && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 
-RUN wget https://www.cloudflare.com/static/misc/mod_cloudflare/ubuntu/mod_cloudflare-precise-amd64.latest.deb \
-    && apt-get install apache2-prefork-dev
-
 RUN apt-get update \
     && apt-get install -y --no-install-recommends --autoremove \
         php7.3-apcu \
