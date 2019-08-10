@@ -21,14 +21,14 @@ A docker image which includes:
   - xsl
   - gmagick
   - xdebug
-- [nodejs 11.x](https://nodejs.org)
+- [nodejs 10.x](https://nodejs.org)
 - [yarn](https://yarnpkg.com)
 - [composer](https://getcomposer.org/)
 
-It also contains `curl`, `wget`, `gnupg2`,  `git` and `chromium` for reasons.
+It also contains `curl`, `wget`, `gnupg2` and `git` for reasons.
 
 You can find the image on the official [docker registry](https://hub.docker.com/r/dnnsrmp/dev-yarn-php/)
 
 ```bash
-docker pull dnnsrmp/dev-yarn-php:latest
+docker pull dnnsrmp/dev-yarn-php:7.3
 ```
