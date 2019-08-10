@@ -30,5 +30,5 @@ It also contains `curl`, `wget`, `gnupg2` and `git` for reasons.
 You can find the image on the official [docker registry](https://hub.docker.com/r/dnnsrmp/dev-yarn-php/)
 
 ```bash
-docker pull dnnsrmp/dev-yarn-php:7.3
+docker pull dnnsrmp/dev-yarn-php:latest
 ```
